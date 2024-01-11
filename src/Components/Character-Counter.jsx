@@ -26,7 +26,7 @@ export const CharacterCounter = () => {
         />
         <Counters totalCharacters={totalCharacters} remaining={remaining} />
       </div>
-      {userInput.length === 150 && (
+      {userInput.length > 150 && (
         <div className="ad">
           <p>
             Upgrade to <b>Premium</b> to write longer post and apply formatting
